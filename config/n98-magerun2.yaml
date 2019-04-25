@@ -1,0 +1,26 @@
+ installation:
+      db:
+        host: 127.0.0.1
+        user: root
+        pass: root
+        port: 3306
+        name: magento
+
+      base-url: http://magento2.localhost/
+
+      sample-data: true
+
+      defaults:
+        currency: USD
+        locale: en_US
+        timezone: America/New_York
+        use-secure: 0
+        use-rewrites: 1
+        session-save: files
+        admin-user: admin
+        admin-firstname: Developer
+        admin-lastname: Test
+        admin-password: admin123
+        backend-frontname: admin
+        admin-email: developer@test.com
+        encryption_key:
