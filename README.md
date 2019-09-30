@@ -33,10 +33,11 @@ There is a script available `m2-install.sh` which is useful to install new M2 in
 ## Caveats
 
 If you face any issue while trying to connect to MySQL from the host, add the following lines to ~/.ssh/config:
-
-`Host vagrant
+```
+ Host vagrant
     User vagrant
     Hostname 127.0.0.1
     port 2222
     IdentityFile /path/to/Vagrantfile/.vagrant/machines/default/virtualbox/private_key
-    IdentitiesOnly yes`
+    IdentitiesOnly yes
+```
