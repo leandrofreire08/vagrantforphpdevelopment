@@ -34,3 +34,12 @@ xdebug.show_local_vars=1
 xdebug.idekey=PHPSTORM
 EOL
 done
+
+# Install phpdebug CLI
+curl https://raw.githubusercontent.com/torinaki/phpdebug-cli/master/phpdebug.sh > ~/.phpdebug
+
+cat >~/.bashrc <<EOL
+if [ -f ~/.phpdebug ]; then
+    . ~/.phpdebug
+fi
+EOL
