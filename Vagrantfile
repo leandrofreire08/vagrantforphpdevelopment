@@ -2,6 +2,9 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/bionic64"
   config.vm.hostname = 'php-dev-box'
 
+  config.vm.box_check_update = false
+  
+
   # Enable plugin to use .env files
   config.env.enable
 
@@ -30,6 +33,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, path: './provisioning/tools.sh', keep_color: true
 
   config.vm.provider 'virtualbox' do |v|
+    v.gui = true
     v.memory = ENV['MEMORY']
     v.cpus   = ENV['CPUS']
   end
