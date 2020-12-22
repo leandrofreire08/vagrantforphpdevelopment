@@ -4,16 +4,6 @@
 - VirtualBox Guest Additions;
 - Vagrant
 
-## After VirtualBox installation
-
-Install the following plugins:
-
-`vagrant plugin install vagrant-disksize`
-
-`vagrant plugin install vagrant-bindfs`
-
-`vagrant plugin install vagrant-env`
-
 ## Clone this repo
 
 `git clone repo_url`
@@ -28,7 +18,7 @@ There is a script available `m2-install.sh` which is useful to install new M2 in
 
 ## Get environment up
 
-`vagrant up`
+`export VAGRANT_EXPERIMENTAL="disks" && vagrant up`
 
 ## Caveats
 
